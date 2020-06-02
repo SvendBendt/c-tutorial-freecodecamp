@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-    float AddOneLoadPart (float fiskekage){                                                            printf("\n                   *** AddOneLoadPart CALLED with the value %.2f\n\n", fiskekage);
+    float AddOneLoadPart (float fiskekage){                                                            printf("\n                   
         float weightAfterLoad;
         float addedLoad;
 
@@ -9,16 +9,16 @@
         scanf("%f", &weightAfterLoad);
         getchar();
         addedLoad = weightAfterLoad - fiskekage;
-        printf("\nLoaded %.2f tonnes \n", addedLoad);                                                 printf("\n                    *** AddOneLoadPart RETURNS %.2f\n\n", addedLoad);
+        printf("\nLoaded %.2f tonnes \n", addedLoad);                                                 printf("\n                    
         return (addedLoad);
     }
 
-    float MainLoader (float kagefisk){                                                                  printf("\n                   *** MainLoader CALLED with the value %.2f\n\n", kagefisk);
+    float MainLoader (float kagefisk){                                                                  printf("\n                   
         float addedLoadML;
         float newTotal;
 
         newTotal = kagefisk + AddOneLoadPart(kagefisk);
-        printf("newtotal = %f", newTotal);                                                              printf("\n                   *** MainLoader RETURNS %.2f\n\n", newTotal);
+        printf("newtotal = %f", newTotal);                                                              printf("\n                   
         return (newTotal);
     }
 
@@ -43,4 +43,5 @@ int main(){
         printf("Total weight after adding another %.2f tonnes is %.2f tonnes", addedWeight, totalWeight);
     }
     printf("\n\n\n\n\n"); return 0;
+
 }
