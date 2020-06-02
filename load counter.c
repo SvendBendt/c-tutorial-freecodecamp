@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-    float AddOneLoadPart (float fiskekage){                                                            printf("\n                   *** AddOneLoadPart CALLED with the value %.2f\n\n", fiskekage);
+    float AddOneLoadPart (float test1){                                                            printf("\n                   *** AddOneLoadPart CALLED with the value %.2f\n\n", test1);
         float weightAfterLoad;
         float addedLoad;
 
         printf("Enter new weight in tonnes, after partial load: ");
         scanf("%f", &weightAfterLoad);
         getchar();
-        addedLoad = weightAfterLoad - fiskekage;
+        addedLoad = weightAfterLoad - test1;
         printf("\nLoaded %.2f tonnes \n", addedLoad);                                                 printf("\n                    *** AddOneLoadPart RETURNS %.2f\n\n", addedLoad);
         return (addedLoad);
     }
 
-    float MainLoader (float kagefisk){                                                                  printf("\n                   *** MainLoader CALLED with the value %.2f\n\n", kagefisk);
+    float MainLoader (float test2){                                                                  printf("\n                   *** MainLoader CALLED with the value %.2f\n\n", test2);
         float addedLoadML;
         float newTotal;
 
-        newTotal = kagefisk + AddOneLoadPart(kagefisk);
+        newTotal = test2 + AddOneLoadPart(test2);
         printf("newtotal = %f", newTotal);                                                              printf("\n                   *** MainLoader RETURNS %.2f\n\n", newTotal);
         return (newTotal);
     }
