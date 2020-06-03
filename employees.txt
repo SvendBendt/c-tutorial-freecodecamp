@@ -1,0 +1,4 @@
+Jim, Salesman
+Pam, Receptionist
+Oscar, Accounting
+Added this line to the file yay Kelly, Customer Service
